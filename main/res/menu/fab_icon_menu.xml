@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/icon_1"
+        android:icon="@drawable/n001_wifi_signal"
+        android:title=""
+        app:showAsAction="always" >
+    </item>
+
+    <item android:id="@+id/icon_2"
+        android:icon="@drawable/n002_volume"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/icon_3"
+        android:icon="@drawable/n003_vision"
+        android:title="" />
+
+    <item android:id="@+id/icon_4"
+        android:icon="@drawable/n004_view"
+        android:title=""/>
+
+    <item
+        android:id="@+id/icon_5"
+        android:icon="@drawable/n005_video"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/icon_6"
+        android:icon="@drawable/n006_trash"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icon_7"
+        android:icon="@drawable/n007_time"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icon_8"
+        android:icon="@drawable/n008_settings"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_9"
+        android:icon="@drawable/n009_send"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/icon_10"
+        android:icon="@drawable/n010_search"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icon_11"
+        android:icon="@drawable/n011_repair"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icon_12"
+        android:icon="@drawable/n012_portfolio"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_13"
+        android:icon="@drawable/n013_pin"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/icon_14"
+        android:icon="@drawable/n014_pie_chart"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icon_15"
+        android:icon="@drawable/n015_photography"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_16"
+        android:icon="@drawable/n016_user"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_17"
+        android:icon="@drawable/n017_pencil"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/icon_18"
+        android:icon="@drawable/n018_mute"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_19"
+        android:icon="@drawable/n019_mouse"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_20"
+        android:icon="@drawable/n020_mobile"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_21"
+        android:icon="@drawable/n021_microphone"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_22"
+        android:icon="@drawable/n022_message"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_23"
+        android:icon="@drawable/n023_menu"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_24"
+        android:icon="@drawable/n024_love"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_25"
+        android:icon="@drawable/n025_lock"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_26"
+        android:icon="@drawable/n026_location"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_27"
+        android:icon="@drawable/n027_letter"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_28"
+        android:icon="@drawable/n028_incoming"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_29"
+        android:icon="@drawable/n029_idea"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_30"
+        android:icon="@drawable/n030_home"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_31"
+        android:icon="@drawable/n031_headset"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_32"
+        android:icon="@drawable/n032_folder"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_33"
+        android:icon="@drawable/n033_flag_1"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_34"
+        android:icon="@drawable/n034_flag"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_35"
+        android:icon="@drawable/n035_files"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_36"
+        android:icon="@drawable/n036_favorite"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_37"
+        android:icon="@drawable/n037_contacts_1"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_38"
+        android:icon="@drawable/n038_contacts"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_39"
+        android:icon="@drawable/n039_computer"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_40"
+        android:icon="@drawable/n040_communication"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_41"
+        android:icon="@drawable/n041_coffee"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+    android:id="@+id/icon_42"
+    android:icon="@drawable/n042_cloud"
+    android:title=""
+    app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_43"
+        android:icon="@drawable/n043_clock"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_44"
+        android:icon="@drawable/n044_check"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_45"
+        android:icon="@drawable/n045_check_list"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_46"
+        android:icon="@drawable/n046_call"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_47"
+        android:icon="@drawable/n047_browser"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_48"
+        android:icon="@drawable/n048_bell"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icon_49"
+        android:icon="@drawable/n049_attachment"
+        android:title=""
+        app:showAsAction="always"/>
+</menu>
