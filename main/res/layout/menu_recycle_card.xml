@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-
         card_view:cardCornerRadius="10dp">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-
+        android:id="@+id/menu_recycle_layout1"
         android:padding="10dp">
             <TextView
                 android:id="@+id/menu_recycle_name"
@@ -43,7 +42,6 @@
             android:layout_weight="0.9"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
-            android:text=" 1 "
             />
         <ImageView
             android:id="@+id/menu_recycle_delete"
@@ -54,7 +52,6 @@
             android:layout_weight="0.9"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
-            android:text=" 1 "
             />
 
     </LinearLayout>
@@ -64,8 +61,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:visibility="gone"
+            android:id="@+id/menu_recycle_layout2"
             android:padding="10dp">
-            <TextView
+            <EditView
                 android:id="@+id/menu_recycle_name2"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
@@ -73,7 +71,7 @@
                 android:layout_weight="8"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
-                android:text=" 1 "
+
                 />
 
             <ImageView
