@@ -12,8 +12,9 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        card_view:cardCornerRadius="10dp">
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        card_view:cardCornerRadius="4dp">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/menu_recycle_layout1"
+        android:background="#E6BBBBBB"
         android:padding="10dp">
             <TextView
                 android:id="@+id/menu_recycle_name"
@@ -35,11 +37,12 @@
 
         <ImageView
             android:id="@+id/menu_recycle_mdoify"
-            android:background="@android:drawable/btn_star_big_off"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_edit"
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nanumgothic"
-            android:layout_weight="0.9"
+            android:layout_weight="1.0"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
             />
@@ -48,10 +51,13 @@
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nanumgothic"
-            android:background="@android:drawable/btn_star_big_on"
-            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_weight="1.0"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
+            android:layout_marginLeft="5dp"
+
             />
 
     </LinearLayout>
@@ -63,20 +69,21 @@
             android:visibility="gone"
             android:id="@+id/menu_recycle_layout2"
             android:padding="10dp">
-            <EditView
+            <EditText
                 android:id="@+id/menu_recycle_name2"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nanumgothic"
                 android:layout_weight="8"
                 android:paddingTop="4dp"
-                android:paddingBottom="4dp"
+                android:gravity="bottom"
 
                 />
 
             <ImageView
                 android:id="@+id/menu_recycle_mdoify2"
-                android:background="@android:drawable/btn_star_big_off"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_edit"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nanumgothic"
@@ -90,7 +97,8 @@
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nanumgothic"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_delete"
                 android:layout_weight="0.9"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"

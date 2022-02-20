@@ -95,7 +95,7 @@ public class JoinActivity extends AppCompatActivity {
                     addRowValue.put("memEmail1", base64Util.base64Encoder(join_email1.getText().toString().trim()));
                     addRowValue.put("memEmail2", base64Util.base64Encoder(join_email1.getText().toString().trim()));
                     addRowValue.put("memUsingYN", "Y");
-                    JoinActivity.NetworkTask networkTask = new JoinActivity.NetworkTask("http://www.pfmac022.com/memJoinJson/", addRowValue);
+                    JoinActivity.NetworkTask networkTask = new JoinActivity.NetworkTask("http://hayley2300.cafe24.com/memJoinJson/", addRowValue);
                     networkTask.execute();
                 }
 

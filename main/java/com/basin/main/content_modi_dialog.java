@@ -633,7 +633,7 @@ public class content_modi_dialog extends AppCompatActivity {
                     addRowValue.put("modidate", mFormat.format(date));
                     Intent intent = new Intent(mContext, MainActivity.class);
                     try {
-                        MyContentsAsyncTask networkTask = new MyContentsAsyncTask(2, "http://www.pfmac022.com/conMJson/", addRowValue);
+                        MyContentsAsyncTask networkTask = new MyContentsAsyncTask(2, "http://hayley2300.cafe24.com/conMJson/", addRowValue);
                         String rlt = networkTask.execute().get();
                         if (!rlt.equals("")) {
                             content_modi_warning_msg.setVisibility(View.INVISIBLE);
@@ -682,7 +682,7 @@ public class content_modi_dialog extends AppCompatActivity {
 
                 Intent intent = new Intent(mContext, MainActivity.class);
                 try {
-                    MyContentsAsyncTask networkTask = new MyContentsAsyncTask(3, "http://www.pfmac022.com/conDJson/", addRowValue);
+                    MyContentsAsyncTask networkTask = new MyContentsAsyncTask(3, "http://hayley2300.cafe24.com/conDJson/", addRowValue);
                     String rlt = networkTask.execute().get();
                     if (!rlt.equals("")) {
                         content_modi_warning_msg.setVisibility(View.INVISIBLE);

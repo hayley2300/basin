@@ -43,6 +43,9 @@
             android:theme="@style/Transparent"/>
         <activity android:name=".main.content_modi_dialog"
             android:theme="@style/Transparent"/>
+
+        <activity android:name=".MenuManageActivity"
+            android:theme="@style/Transparent"/>
           <!--  android:theme="@android:style/Theme.Holo.Dialog"/>-->
         <service android:name=".service.BasinService"></service>
     </application>

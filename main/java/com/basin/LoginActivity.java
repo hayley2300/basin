@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        this.setContentView(R.layout.activity_login);
         login_id = findViewById(R.id.login_id);
         login_pw = findViewById(R.id.login_pw);
         login_confirm = findViewById(R.id.login_confirm);
@@ -117,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     addRowValue.put("memId", login_id.getText().toString());
                     addRowValue.put("memPw", login_pw.getText().toString());
-                    LoginActivity.NetworkTask networkTask = new LoginActivity.NetworkTask("http://www.pfmac022.com/memLoginJson/", addRowValue);
+                    LoginActivity.NetworkTask networkTask = new LoginActivity.NetworkTask("http://hayley2300.cafe24.com/memLoginJson/", addRowValue);
                     networkTask.execute();
                 }
 

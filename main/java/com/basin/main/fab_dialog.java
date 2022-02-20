@@ -597,7 +597,7 @@ public class fab_dialog extends AppCompatActivity {
                     addRowValue.put("credate", credate);
                     Intent intent = new Intent();
                     try {
-                        MyContentsAsyncTask networkTask = new MyContentsAsyncTask(1, "http://www.pfmac022.com/conRJson/", addRowValue);
+                        MyContentsAsyncTask networkTask = new MyContentsAsyncTask(1, "http://hayley2300.cafe24.com/conRJson/", addRowValue);
                         String rlt = networkTask.execute().get();
                         if (!rlt.equals("")) {
                             main_dialog_warning_msg.setVisibility(View.INVISIBLE);

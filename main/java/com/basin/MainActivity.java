@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     TextView main_username;
     long backKeyPressedTime;    //앱종료 위한 백버튼 누른시간
-    TextView logout_btn;
+    TextView logout_btn, nav_menu_setting;
     ImageView img_view;
     DBHelper helper;
     SQLiteDatabase db;
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     String user_id = "";
     Main_geturllist_user geturllist_user = null;
     JSONArray jsonArray_urllist_user = null;
-    Menu menu;
+    static Menu menu;
     ArrayList<Content> contentArrayList;
     static public HashMap<String, Integer> contentMap = new HashMap<>();
     ArrayList<UserMenu> menuArrayList;
@@ -96,6 +96,9 @@ public class MainActivity extends AppCompatActivity {
     public MainActivity(){
         mList.clear();
         contentMap.clear();
+    }
+    public Menu getMenu(){
+        return menu;
     }
     /*W
     ServiceConnection sconn = new ServiceConnection() {
@@ -138,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
 
         main_username = headerView.findViewById(R.id.main_username);
         logout_btn = headerView.findViewById(R.id.logout_btn);
+        nav_menu_setting = headerView.findViewById(R.id.nav_menu_setting);
         img_view = headerView.findViewById(R.id.imageView);
         mContext = this;
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -184,11 +188,21 @@ public class MainActivity extends AppCompatActivity {
                 db.execSQL(sql);
                 Intent intent = new Intent(mContext, LoginActivity.class);
                 startActivityForResult(intent, 1);
-                startActivity(intent);
+                //startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 ((MainActivity) mContext).finish();
             }
         });
+
+        nav_menu_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, MenuManageActivity.class);
+                //startActivityForResult(intent, 1);
+                startActivity(intent);
+            }
+        });
+
         img_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -213,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
                                 addRowValue.put("userid", user_id);
                                 addRowValue.put("user_menu1", edittext.getText().toString());
                                 try {
-                                    MyFolderAsyncTask networkTask = new MyFolderAsyncTask("http://www.pfmac022.com/menuRJson/", addRowValue);
+                                    MyFolderAsyncTask networkTask = new MyFolderAsyncTask("http://hayley2300.cafe24.com/menuRJson/", addRowValue);
                                     rlt = networkTask.execute().get();
                                 }catch(Exception e ){
                                     rlt ="";
@@ -274,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
         addRowValue.put("phase", 0);
 
 
-            NetworkTask networkTask = new NetworkTask("http://www.pfmac022.com/conSJson/", addRowValue);
+            NetworkTask networkTask = new NetworkTask("http://hayley2300.cafe24.com/conSJson/", addRowValue);
         networkTask.execute();
 
 
@@ -478,7 +492,7 @@ public class MainActivity extends AppCompatActivity {
                             addRowValue.put("num", 0);
                             addRowValue.put("phase", 0);
 
-                            NetworkTask networkTask = new NetworkTask("http://www.pfmac022.com/conSJson/", addRowValue);
+                            NetworkTask networkTask = new NetworkTask("http://hayley2300.cafe24.com/conSJson/", addRowValue);
                             networkTask.execute();
                             return true;
                         }
@@ -535,9 +549,9 @@ public class MainActivity extends AppCompatActivity {
 
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 if (i == 0) {
-                    menuSize = Integer.parseInt(jsonObject.getString("user_menu1"));
+                    menuSize = Integer.parseInt(jsonObject.getString("user_menu1").trim());
                 } else if (i <= menuSize) {
-                    UserMenu userMenu = new UserMenu(jsonObject.getString("user_menu1"));
+                    UserMenu userMenu = new UserMenu(jsonObject.getString("user_menu1").trim());
                     menuArrayList.add(userMenu);
                 } else {
                     Content content = new Content(jsonObject.getInt("num"),
@@ -598,6 +612,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //2번째 백버튼 클릭 (종료)
         else {
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             AppFinish();
         }
     }

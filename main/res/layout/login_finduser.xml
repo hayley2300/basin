@@ -72,14 +72,6 @@
                     android:fontFamily="@font/nanumgothic"
                     android:paddingRight="5dp"
                     android:textSize="12dp"/>
-                <RadioButton
-                    android:text="ID/PW"
-                    android:id="@+id/rg_btn3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nanumgothic"
-                    android:textSize="12dp"
-                    />
 
             </RadioGroup>
             </LinearLayout>

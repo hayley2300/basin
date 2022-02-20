@@ -63,7 +63,6 @@ public class FindUserActivity extends AppCompatActivity {
         login_radiogroup = findViewById(R.id.finduser_radioGroup);
         r_btn1 = (RadioButton) findViewById(R.id.rg_btn1);
         r_btn2 = (RadioButton) findViewById(R.id.rg_btn2);
-        r_btn3 = (RadioButton) findViewById(R.id.rg_btn3);
         email_validator = new Validator();
         base64Util = new Base64Util();
         finduser_linear2.setVisibility(View.INVISIBLE);
@@ -82,9 +81,6 @@ public class FindUserActivity extends AppCompatActivity {
                 }
                 else if(i == R.id.rg_btn2){
                     radio_mode =2;
-                    Toast.makeText(mContext, "라디오 그룹 버튼2 눌렸습니다.", Toast.LENGTH_SHORT).show();
-                }else if(i == R.id.rg_btn3){
-                    radio_mode =3;
                     Toast.makeText(mContext, "라디오 그룹 버튼2 눌렸습니다.", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -152,7 +148,7 @@ public class FindUserActivity extends AppCompatActivity {
                     addRowValue.put("mode", 1);
                     addRowValue.put("value1", finduser_findpw.getText().toString().trim());
                     addRowValue.put("value2", "");
-                    FindUserActivity.NetworkTask networkTask = new FindUserActivity.NetworkTask("http://www.pfmac022.com/memInfoModify/", addRowValue);
+                    FindUserActivity.NetworkTask networkTask = new FindUserActivity.NetworkTask("http://hayley2300.cafe24.com/memInfoModify/", addRowValue);
                     networkTask.execute();
                 }
             }
@@ -227,7 +223,7 @@ public class FindUserActivity extends AppCompatActivity {
                     addRowValue.put("memEmail1", base64Util.base64Encoder(login_join_email1.getText().toString().trim()));
                     addRowValue.put("memEmail2", base64Util.base64Encoder(login_join_email2.getText().toString().trim()));
                     addRowValue.put("memUsingYN", "Y");
-                    LoginFindUserActivity.NetworkTask networkTask = new LoginFindUserActivity.NetworkTask("http://www.pfmac022.com/memJoinJson/", addRowValue);
+                    LoginFindUserActivity.NetworkTask networkTask = new LoginFindUserActivity.NetworkTask("http://hayley2300.cafe24.com/memJoinJson/", addRowValue);
                     networkTask.execute();
                 }
 
